@@ -13,11 +13,11 @@ Steps
     -AWS_SECRET
     -EC2_KEY_HANDLE
     -SECGROUP_ID
-   # Note: AMI Ids are unique to each region. If you want to change the region or AMI, read this for more information. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami.html
+    *Note: AMI Ids are unique to each region. If you want to change the region or AMI, read this for more information. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami.html
 3.  Save the template
 4. Open a terminal and navigate to the directory your template is saved to.
 5. Type: python3.13 launch_ec2.py
-   # Note: use python3.12 or your specific version if needed.
+   *Note: use python3.12 or your specific version if needed.
 6. The script should run and your EC2 should launch. Confirm in the AWS console.
 
 Tear Down Instructions
@@ -30,11 +30,11 @@ Tear Down Instructions
     response = ec2.describe_instance_status(InstanceIds=[Instance_ID])
     status=response ['Reservations'][0]['Instances'][0]['State']['Name']
 
-  # The KeyError came from using the wrong response syntax.
+  **The KeyError came from using the wrong response syntax.**
       - The code mixes up describe_instance_status with the indexing pattern for describe_instances.
       - describe_instance_status returns 'InstanceStatuses' not 'Reservations'.
       - describe_instances returns 'Reservations'.
 
-  # For more information, study the resources below
+  **For more information, study the resources below**
       https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2/client/describe_instances.html
       https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2/client/describe_instance_status.html
