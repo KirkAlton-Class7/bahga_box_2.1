@@ -10,14 +10,15 @@
 
 1. Create a valid security group for your EC2 instance. Set up the SG in the same region you will use in the launch_ec2.py template.
 2. Open the template in Visual Studio Code and insert values for the following:
-  -AWS_KEY
-  -AWS_SECRET
-  -EC2_KEY_HANDLE
-  -SECGROUP_ID
-3.  Save the template
-4. Open a terminal and navigate to the directory your template is saved to.
-5. Type: python3.13 launch_ec2.py
-6. The script should run and your EC2 should launch. Confirm in the AWS console.
+
+   -AWS_KEY
+   -AWS_SECRET
+   -EC2_KEY_HANDLE
+   -SECGROUP_ID
+4.  Save the template
+5. Open a terminal and navigate to the directory your template is saved to.
+6. Type: python3.13 launch_ec2.py
+7. The script should run and your EC2 should launch. Confirm in the AWS console.
 
 **Tear Down Instructions**
 
@@ -32,9 +33,9 @@
 
 # Notes:
 
-**Note: AMI Ids are unique to each region. If you want to change the region or AMI, read this for more information. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami.html**
+**- AMI Ids are unique to each region. If you want to change the region or AMI, read this for more information. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami.html**
 
-**Note: When running the script, use python3.13 or your specific version if needed.**
+**- When running the script, use python3.13 or your specific version if needed.**
 
 **The script in the book returns a KeyError in the "while status == 'pending' loop."**
    ```python
