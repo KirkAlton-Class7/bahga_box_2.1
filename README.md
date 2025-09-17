@@ -30,14 +30,9 @@ Tear Down Instructions
     response = ec2.describe_instance_status(InstanceIds=[Instance_ID])
     status=response ['Reservations'][0]['Instances'][0]['State']['Name']
 
-**The KeyError came from using the wrong response syntax.**
         - The code mixes up describe_instance_status with the indexing pattern for describe_instances.
         - describe_instance_status returns 'InstanceStatuses' not 'Reservations'.
         - describe_instances returns 'Reservations'.
-        -AWS_KEY
-    -AWS_SECRET
-    -EC2_KEY_HANDLE
-    -SECGROUP_ID
 
 **For more information, study the resources below**
       https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2/client/describe_instances.html
