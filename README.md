@@ -27,12 +27,15 @@
 4. Delete the EC2 security group (optional)
 
 
-**Note: AMI Ids are unique to each region. If you want to change the region or AMI, read this for more information. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami.html**
 
-**Note: use python3.12 or your specific version if needed.**
 
 
 # Notes:
+
+**Note: AMI Ids are unique to each region. If you want to change the region or AMI, read this for more information. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami.html**
+
+**Note: When running the script, use python3.13 or your specific version if needed.**
+
 **The script in the book returns a KeyError in the "while status == 'pending' loop."**
    ```python
 while status == 'pending':
