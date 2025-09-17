@@ -10,16 +10,13 @@
 
 1. Create a valid security group for your EC2 instance. Set up the SG in the same region you will use in the launch_ec2.py template.
 2. Open the template in Visual Studio Code and insert values for the following:
-
   -AWS_KEY
   -AWS_SECRET
   -EC2_KEY_HANDLE
   -SECGROUP_ID
-  **Note: AMI Ids are unique to each region. If you want to change the region or AMI, read this for more information. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami.html**
 3.  Save the template
 4. Open a terminal and navigate to the directory your template is saved to.
 5. Type: python3.13 launch_ec2.py
-   **Note: use python3.12 or your specific version if needed.**
 6. The script should run and your EC2 should launch. Confirm in the AWS console.
 
 **Tear Down Instructions**
@@ -28,6 +25,12 @@
 2. Click the selection box next to your instance.
 3. Click the "Instance State" dropdown menu and select "Terminate Instance"
 4. Delete the EC2 security group (optional)
+
+
+**Note: AMI Ids are unique to each region. If you want to change the region or AMI, read this for more information. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami.html**
+
+**Note: use python3.12 or your specific version if needed.**
+
 
 # Notes:
 **The script in the book returns a KeyError in the "while status == 'pending' loop."**
