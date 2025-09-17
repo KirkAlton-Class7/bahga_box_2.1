@@ -15,6 +15,7 @@
    -AWS_SECRET
    -EC2_KEY_HANDLE
    -SECGROUP_ID
+
 4.  Save the template
 5. Open a terminal and navigate to the directory your template is saved to.
 6. Type: python3.13 launch_ec2.py
