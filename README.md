@@ -28,6 +28,8 @@ Tear Down Instructions
 
 # Note: The script in the book returns a KeyError in the "while status == 'pending' loop."
    ```python
+while status == 'pending':
+sleep(10)
 response = ec2.describe_instance_status(InstanceIds=[Instance_ID])
 status = response['Reservations'][0]['Instances'][0]['State']['Name']
 ```
