@@ -6,7 +6,7 @@
 
 **Python Template: launch_ec2.py**
 
-**Steps**
+# Steps
 1. Create a valid security group for your EC2 instance. Set up the SG in the same region you will use in the launch_ec2.py template.
 2. Open the template in Visual Studio Code and insert values for the following:
     -AWS_KEY
