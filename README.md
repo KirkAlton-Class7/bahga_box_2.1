@@ -16,10 +16,10 @@
    -EC2_KEY_HANDLE
    -SECGROUP_ID
 
-4.  Save the template
-5. Open a terminal and navigate to the directory your template is saved to.
-6. Type: python3.13 launch_ec2.py
-7. The script should run and your EC2 should launch. Confirm in the AWS console.
+3.  Save the template
+4. Open a terminal and navigate to the directory your template is saved to.
+5. Type: python3.13 launch_ec2.py
+6. The script should run and your EC2 should launch. Confirm in the AWS console.
 
 **Tear Down Instructions**
 
