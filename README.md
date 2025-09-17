@@ -33,10 +33,12 @@ status = response['Reservations'][0]['Instances'][0]['State']['Name']
 ```
 
 **The KeyError came from using the wrong response syntax.**
-        - The code mixes up describe_instance_status with the indexing pattern for describe_instances.
-        - describe_instance_status returns 'InstanceStatuses' not 'Reservations'.
-        - describe_instances returns 'Reservations'.
+
+- The code mixes up describe_instance_status with the indexing pattern for describe_instances.
+- describe_instance_status returns 'InstanceStatuses' not 'Reservations'.
+- describe_instances returns 'Reservations'.
 
 **For more information, study the resources below**
-      https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2/client/describe_instances.html
-      https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2/client/describe_instance_status.html
+
+    - https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2/client/describe_instances.html
+    - https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2/client/describe_instance_status.html
