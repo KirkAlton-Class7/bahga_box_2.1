@@ -26,7 +26,8 @@ Tear Down Instructions
 3. Click the "Instance State" dropdown menu and select "Terminate Instance"
 4. Delete the EC2 security group (optional)
 
-# Note: The script in the book returns a KeyError in the "while status == 'pending' loop."
+# Notes:
+**The script in the book returns a KeyError in the "while status == 'pending' loop."**
    ```python
 while status == 'pending':
 sleep(10)
